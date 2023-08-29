@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Josefin+Sans&family=Open+Sans&display=swap');
+
+:root {
+    --background: #fff8e7;
+    --text: #111;
+    --accent: #1abc9c;
+    --secondary: #DD4A48;
+    --nav-text: 'Josefin Sans';
+    --body-text: 'Open Sans';
+    --header-text: 'Bubblegum Sans';
+}
+
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: var(--background) !important;
+    color: var(--text) !important;
+}
+
+hr {
+    margin: 0 auto !important;
+    height: 1.2px !important;
+    width: 85vw !important;
+    opacity: 0.3 !important;
+    color:#111111 !important;
+    background-color:#111111 !important;
+}
+
+.detailhr {
+    margin: 10px 0 !important;
+    height: 3px !important;
+    width: 25px !important;
+    opacity: 1 !important;
+    color:var(--accent) !important;
+    background-color:var(--accent) !important;
+}
+
+.footer {
+    display: flex;
+    color: rgba(77, 77, 77, 0.89);
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--background);
+}
+
+.footer div {
+    font-size: 12px;
+    opacity: 65%;
+}
+
+.socials {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition-duration: 0.25s;
+}
+
+.socials:hover {
+    transform: scale(2);
+}
+
+.brands img {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-brand {
+    color: var(--secondary) !important;
+    font-size: 24px !important;
+}
+
+/* Home Page */
+
+#content {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#content h1, #content h1 span  {
+    background: -webkit-linear-gradient( var(--secondary) , var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 7vw;
+    margin: 5vh 0;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+#content h3 {
+    font-size: 1.2vw;
+    opacity: 70%;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 0 30vw;
+}
+
+.navbar {
+    padding-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.navbar-brand {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.nav-link{
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    margin: 7px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal;
+}
+
+.nav-link:hover, .brand:hover {
+    text-decoration: inherit;
+}
+
+.navbar-nav  li a:hover {
+    transform: scale(1.05);
+    color: var(--accent) !important;
+    font-weight: bold;
+}
+
+.current {
+    transform: scale(1.05) !important; 
+	color: var(--secondary) !important;
+    font-weight: bold !important;
+}
+
+.nav-item {
+  padding-right: 30px;
+}
+
+.navig {
+    padding: 5px 80px;
+}
+
+.brand {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+/* About Page */
+
+#aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 0 7vw;
+}
+
+#aboutDetails, #connectDetails{
+    padding: 20px 10vw;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 1px;
+}
+
+#connectDetails {
+    padding-bottom: 50px;
+}
+
+.connect strong {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.details h6 {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 70%;
+}
+
+.details p {
+    font-size: 14px;
+    opacity: 65%;
+    line-height: 1.5;
+}
+
+.details {
+    width: 200px;
+    font-weight: 500;
+}
+
+.aboutPic img {
+    width: 300px;
+    height: 450px;
+}
+
+.aboutPic, .aboutInfo {
+    padding: 0 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aboutInfo h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: left;
+    margin: 1vh 0;
+    color: #05a585;
+    letter-spacing: 1px;
+}
+
+.aboutInfo h5 {
+    opacity: 70%;
+    font-size: 24px;
+    text-align: justify;
+    font-weight: 650;
+    margin: 1vh 0;
+    line-height: 1.5;
+}
+
+.aboutInfo p{
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.7;
+    opacity: 65%;
+    letter-spacing: 0.8px;
+}
+
+h6 a{
+    text-decoration: none;
+    color: inherit;
+    opacity: 65%;
+    transition-duration: 0.4s;
+}
+
+h6 a:hover{
+    opacity: 1;
+    font-weight: 800;
+    border-bottom: 1px solid var(--accent);
+    color: #0ea788;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+    .navig {
+        padding: 5px 10px;
+    }
+
+    .navbar-nav  li a:hover {
+        transform: scale(1.02);
+    }
+    
+    .nav-item {
+        text-align: center;
+    }
+
+    #content {
+        padding: 0 10px;
+    }
+
+    #content h1 {
+        font-size: 13vw;
+        margin: 5vh;
+    }
+    
+    #content h3 {
+        font-size: 3vw;
+        opacity: 70%;
+        font-weight: lighter;
+        letter-spacing: 1px;
+        line-height: 1.5;
+        margin: 10px 25px;
+    }
+
+    #aboutContainer {
+        flex-wrap: wrap;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #aboutContainer img {
+        padding: 20px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .aboutInfo h3{
+        font-size: 40px;
+        margin: 2vh;
+        letter-spacing: 2px;
+    }
+    
+    .aboutInfo h5 {
+        opacity: 70%;
+        text-align: justify;
+        font-weight: 500;
+        margin: 1.5vh 0;
+    }
+    
+    .aboutInfo p{
+        text-align: left;
+        font-size: 14px;
+        line-height: 2;
+        opacity: 65%;
+        letter-spacing: 0.8px;
+    }
+
+    #aboutDetails, #connectDetails {
+        padding: 10px;
+        flex-wrap: wrap;
+        justify-content: left;
+        letter-spacing: 1px;
+    }
+    
+    .details {
+        padding-left: 25px;
+        width: 80vw;
+    }
+
+    .footer {
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 25px;
+        position: unset;
+    }
+    
+    .footer div {
+        margin: 10px 0;
+        font-size: 11px;
+    }
+}
+
+/* Design Page */
